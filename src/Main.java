@@ -41,29 +41,29 @@ public class Main {
                     x=x+nbsteps;
                 }
             }
-            tab
-            if(y<0)
-            {
-                System.out.println("1 "+y);
+            tabx[i]=x;
+            taby[i]=y;
+
+
+        }
+        for(int i=0;i<nbtest;i++)
+        {
+            if (taby[i] < 0) {
+                System.out.println("1 " + Math.abs(taby[i]));
             }
-            if(y>0)
-            {
-                System.out.println("0 "+y);
+            if (taby[i] > 0) {
+                System.out.println("0 " + taby[i]);
             }
-            if(x<0)
-            {
-                System.out.println("2 "+x);
+            if (tabx[i] < 0) {
+                System.out.println("2 " + Math.abs(tabx[i]));
             }
-            if(x>0)
-            {
-                System.out.println("3 "+x);
+            if (tabx[i] > 0) {
+                System.out.println("3 " + tabx[i]);
             }
 
-            if(y==0 && x==0)
-            {
+            if (taby[i] == 0 && tabx[i] == 0) {
                 System.out.println("studnia");
             }
-
         }
     }
 }
